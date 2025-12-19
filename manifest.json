@@ -1,0 +1,23 @@
+{
+  "name": "AWS Console Date Fixer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Fixes dates in AWS console to be all ISO format, instead of a mess of formats",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+        "matches": ["https://*.console.aws.amazon.com/*"],
+        "js": [
+          "config-us.js",
+          "config-local.js",
+          "content-script.js"
+        ],
+        "run_at": "document_start"
+    }
+  ]
+}
