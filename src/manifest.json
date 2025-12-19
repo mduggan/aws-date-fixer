@@ -11,13 +11,9 @@
   "permissions": [],
   "content_scripts": [
     {
-        "matches": ["https://*.console.aws.amazon.com/*"],
-        "js": [
-          "config-us.js",
-          "config-local.js",
-          "content-script.js"
-        ],
-        "run_at": "document_start"
+      "matches": ["https://*.console.aws.amazon.com/*"],
+      "js": ["config-us.js", "config-local.js", "content-script.js"],
+      "run_at": "document_start"
     }
   ]
 }

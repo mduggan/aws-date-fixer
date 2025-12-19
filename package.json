@@ -1,0 +1,14 @@
+{
+  "name": "aws-date-fixer",
+  "version": "1.0.0",
+  "description": "Chrome extension to fix dates in AWS console",
+  "main": "config-local.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "2.3.10"
+  }
+}
