@@ -4,8 +4,8 @@
   "manifest_version": 3,
   "description": "Fixes dates in AWS console to be all ISO format, instead of a mess of formats",
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
+    "16": "icon-16.png",
+    "48": "icon-48.png",
     "128": "icon.png"
   },
   "permissions": [],
@@ -15,5 +15,12 @@
       "js": ["config-us.js", "config-local.js", "content-script.js"],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "data_collection_permissions": { "required": ["none"] },
+      "id": "@aws-date-fixer",
+      "strict_min_version": "142.0"
+    }
+  }
 }
